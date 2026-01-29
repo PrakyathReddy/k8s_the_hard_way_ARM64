@@ -16,5 +16,5 @@ $ lxc config device override server root size=20GB
 $ lxc config device override node-0 root size=20GB
 $ lxc config device override node-1 root size=20GB
 
-![lxc_list](./images/lxc_list.png)
+![lxc_list](../images/lxc_list.png)
 
