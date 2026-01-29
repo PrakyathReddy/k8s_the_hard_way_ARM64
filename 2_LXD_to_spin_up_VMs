@@ -6,3 +6,15 @@
 
 LXC (Linux Containers) allows multiple isolated Linux Systems to run a single host without a hypervisor. LXD manges LXC containers.
 
+$ sudo snap install lxd
+$ sudo lxd init
+$ lxc launch images:debian/12 jumpbox -c limits.cpu=1 -c limits.memory=512MB
+$ lxc launch images:debian/12 server -c limits.cpu=1 -c limits.memory=2GB
+$ lxc launch images:debian/12 node-0 -c limits.cpu=1 -c limits.memory=2GB
+$ lxc launch images:debian/12 node-1 -c limits.cpu=1 -c limits.memory=2GB
+$ lxc config device override server root size=20GB
+$ lxc config device override node-0 root size=20GB
+$ lxc config device override node-1 root size=20GB
+
+![lxc_list](images/lxc_list.png)
+
