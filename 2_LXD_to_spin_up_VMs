@@ -1,0 +1,8 @@
+4 VM's to create using LXD
+1. Jumpbox - admin host with 1 cpu, 512MB RAM & 10GB storage
+2. Kubernetes server with 1 cpu, 2GB RAM & 20GB storage
+3. node-0 as k8s worker node with 1 cpu, 2GB RAM & 20GB storage
+4. node-1 as second k8s worker node with 1 cpu, 2GB RAM & 20GB storage
+
+LXC (Linux Containers) allows multiple isolated Linux Systems to run a single host without a hypervisor. LXD manges LXC containers.
+
