@@ -1,1 +1,6 @@
-# k8s_the_hard_way_ARM64
+# Kubernetes the hard way 
+
+Steps:
+1. repurposed an old M1 Mac into an ubuntu machine
+
+
