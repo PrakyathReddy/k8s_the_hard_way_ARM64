@@ -6,26 +6,26 @@
 
 LXC (Linux Containers) allows multiple isolated Linux Systems to run a single host without a hypervisor. LXD manges LXC containers.
 
-$ sudo snap install lxd
-$ sudo lxd init
-$ lxc launch images:debian/12 jumpbox -c limits.cpu=1 -c limits.memory=512MB
-$ lxc launch images:debian/12 server -c limits.cpu=1 -c limits.memory=2GB
-$ lxc launch images:debian/12 node-0 -c limits.cpu=1 -c limits.memory=2GB
-$ lxc launch images:debian/12 node-1 -c limits.cpu=1 -c limits.memory=2GB
-$ lxc config device override server root size=20GB
-$ lxc config device override node-0 root size=20GB
-$ lxc config device override node-1 root size=20GB
+$ sudo snap install lxd <br>
+$ sudo lxd init <br>
+$ lxc launch images:debian/12 jumpbox -c limits.cpu=1 -c limits.memory=512MB <br>
+$ lxc launch images:debian/12 server -c limits.cpu=1 -c limits.memory=2GB <br>
+$ lxc launch images:debian/12 node-0 -c limits.cpu=1 -c limits.memory=2GB <br>
+$ lxc launch images:debian/12 node-1 -c limits.cpu=1 -c limits.memory=2GB <br>
+$ lxc config device override server root size=20GB <br>
+$ lxc config device override node-0 root size=20GB <br>
+$ lxc config device override node-1 root size=20GB <br>
 
 ![lxc_list](./images/lxc_list.png)
 
-admin@grid:~/Desktop$ sudo lxc exec jumpbox -- cat /etc/os-release
-[sudo] password for admin: 
-PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
-NAME="Debian GNU/Linux"
-VERSION_ID="12"
-VERSION="12 (bookworm)"
-VERSION_CODENAME=bookworm
-ID=debian
-HOME_URL="https://www.debian.org/"
-SUPPORT_URL="https://www.debian.org/support"
-BUG_REPORT_URL="https://bugs.debian.org/"
+admin@grid:~/Desktop$ sudo lxc exec jumpbox -- cat /etc/os-release <br>
+[sudo] password for admin:  <br>
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)" <br>
+NAME="Debian GNU/Linux" <br>
+VERSION_ID="12" <br>
+VERSION="12 (bookworm)" <br>
+VERSION_CODENAME=bookworm <br>
+ID=debian <br>
+HOME_URL="https://www.debian.org/" <br>
+SUPPORT_URL="https://www.debian.org/support" <br>
+BUG_REPORT_URL="https://bugs.debian.org/" <br>
