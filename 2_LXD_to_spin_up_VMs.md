@@ -16,4 +16,16 @@ $ lxc config device override server root size=20GB
 $ lxc config device override node-0 root size=20GB
 $ lxc config device override node-1 root size=20GB
 
-![alt text](image.png)
+![lxc_list](./images/lxc_list.png)
+
+admin@grid:~/Desktop$ sudo lxc exec jumpbox -- cat /etc/os-release
+[sudo] password for admin: 
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
